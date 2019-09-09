@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "804534813374",
+    "firebase_url": "https://foretrailbasic.firebaseio.com",
+    "project_id": "foretrailbasic",
+    "storage_bucket": "foretrailbasic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804534813374:android:1294f6c4fe0cc3cf0694ef",
+        "android_client_info": {
+          "package_name": "com.thetripod.foretrailbasic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "804534813374-blmq657bm0ia780ft634k10k2mtfc4u6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thetripod.foretrailbasic",
+            "certificate_hash": "49833971e53beef6eb58a5c4714f9c14a8705ad1"
+          }
+        },
+        {
+          "client_id": "804534813374-2ga1s4iaph31togdu4pccfs34m8giipl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdHj9lIiDnont_K_iA_kdI8rXcAMLYWck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "804534813374-2ga1s4iaph31togdu4pccfs34m8giipl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
