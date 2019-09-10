@@ -8,93 +8,167 @@
     tools:context=".MissingActivity"
     tools:showIn="@layout/activity_new_missing_entry"
     android:orientation="vertical">
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_add_profile_pic"
-        android:id="@+id/set_missing_pic"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="enter name"
-        android:textAlignment="center"
-        android:textColor="#202020"
-        android:textSize="22sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.255"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/set_missing_name"
-        android:layout_width="260dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/quicksand_medium"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="28dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="missing from :"
-        android:textColor="#202020"
-        android:textSize="22sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.255"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/set_missing_date"
-        android:layout_width="260dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/quicksand_medium"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="28dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="location"
-        android:textColor="#202020"
-        android:textSize="22sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.255"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <EditText
-        android:id="@+id/set_missing_location"
-        android:layout_width="260dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/quicksand_medium"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="28dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="enter last seen"
-        android:textColor="#202020"
-        android:textSize="22sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.255"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/set_missing_last_seen"
-        android:layout_width="260dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/quicksand_medium"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="28dp"/>
 
 
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+           <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+               <ImageView
+                   android:id="@+id/set_missing_pic"
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp"
+                   android:clickable="true"
+                   android:src="@drawable/ic_add_profile_pic" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="enter name"
+                android:textAlignment="center"
+                android:textColor="#202020"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.255"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/set_missing_name"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_medium"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="28dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="location"
+                android:textColor="#202020"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.255"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/set_missing_location"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_medium"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="28dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="missing from :"
+                android:textColor="#202020"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.255"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/set_missing_date"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_medium"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="28dp" />
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="enter last seen"
+                android:textColor="#202020"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.255"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/set_missing_last_seen"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_medium"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="28dp" />
+               <ProgressBar
+                   android:id="@+id/progress_bar"
+                   style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentStart="true"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginTop="10dp"/>
+
+               <LinearLayout
+
+                   android:layout_marginTop="20dp"
+
+                   android:layout_gravity="bottom"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <TextView
+                       android:id="@+id/cancel_booking"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_weight="1"
+                       android:fontFamily="@font/quicksand_medium"
+                       android:gravity="center_horizontal"
+
+                       android:text="cancel"
+
+                       android:textSize="18sp" />
+                   <FrameLayout
+                       android:layout_weight="1"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+                       <ImageView
+
+                           android:layout_gravity="center"
+                           android:layout_width="200dp"
+                           android:layout_height="100dp"
+                           android:src="@drawable/ic_rounded_button_red"/>
+
+                       <TextView
+                           android:id="@+id/confirm_booking"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:layout_marginTop="-3dp"
+                           android:fontFamily="@font/quicksand_medium"
+                           android:text="confirm"
+                           android:textColor="#ffffff"
+                           android:textSize="16sp" />
+                   </FrameLayout>
+
+
+               </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
 
 
 </LinearLayout>

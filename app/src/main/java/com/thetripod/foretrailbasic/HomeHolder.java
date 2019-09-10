@@ -2,6 +2,7 @@ package com.thetripod.foretrailbasic;
 
 import android.content.Context;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -12,6 +13,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Picasso;
 
 
 public class HomeHolder extends RecyclerView.ViewHolder {
@@ -39,42 +41,43 @@ public class HomeHolder extends RecyclerView.ViewHolder {
             field.setText("Missing since "+missingTime);
         }
 
-    public void setMissingLocation(String missingLocation) {
-        TextView field = (TextView) mView.findViewById(R.id.missing_location);
-        field.setText(missingLocation);
-    }
+        public void setMissingLocation(String missingLocation) {
+             TextView field = (TextView) mView.findViewById(R.id.missing_location);
+             field.setText(missingLocation);
+        }
 
+         public void setMissingPhoto(String missingUrl) {
 
+             ImageView imageView =  mView.findViewById(R.id.missing_photo);
+             Picasso.get()
+                     .load(missingUrl)
+                     .placeholder(R.mipmap.ic_launcher)
+                     .fit()
+                     .centerCrop()
+                     .into(imageView);
 
-
-
-  /*  public void setBankerId(String bankerId) {
-            final TextView field = (TextView) mView.findViewById(R.id.completed_banker_id);
-            DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference();
-            final DatabaseReference mRef2 = mDatabase.child("Banker").child(bankerId);
-            mRef2.addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    BankerDetails bankerDetails = dataSnapshot.getValue(BankerDetails.class);
-
-                    field.setText(bankerDetails.getName());
-                }
-
-                @Override
-                public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                }
-            });
 
         }
-        public void setServiceId(String serviceId) {
-            TextView field = (TextView) mView.findViewById(R.id.completed_service_Id);
-            field.setText(serviceId);
+
+
+         /* public void setMissingImage(String missingId) {
+                final ImageView field =  mView.findViewById(R.id.missing_photo);
+                DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference();
+                final DatabaseReference mRef2 = mDatabase.child("missing").child("San Francisco").child(missingId);
+                mRef2.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        MissingPost missingPost = dataSnapshot.getValue(MissingPost.class);
+
+                        field.setImage(missingPost.getmImageUrl());
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });*/
+
         }
-        public void setBookingTimestamp(String bookingTimestamp){
-            TextView field = (TextView)mView.findViewById(R.id.completed_booking_date);
-        }
-        *//*public void setBranch(String branchName){
-            TextView field = (TextView)mView.findViewById(R.id.branch);
-        }*/
-}
+
+
