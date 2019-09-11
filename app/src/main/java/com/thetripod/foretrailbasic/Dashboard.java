@@ -30,6 +30,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -89,11 +90,11 @@ public class Dashboard extends AppCompatActivity {
         //spinBranch = findViewById(R.id.branch_name);
 
 
-        FirebaseApp.initializeApp(this);
+        /*FirebaseApp.initializeApp(this);
 
         mAuth = FirebaseAuth.getInstance();
         mDatabase = FirebaseDatabase.getInstance().getReference();
-
+*/
 
         FirebaseApp.initializeApp(this);
 
@@ -150,11 +151,13 @@ public class Dashboard extends AppCompatActivity {
             }
 
             @Override
-            protected void onBindViewHolder(@NonNull HomeHolder homeHolder, int i, @NonNull MissingPost bookingCompleted) {
-                homeHolder.setMissingName(bookingCompleted.getName());
-                homeHolder.setMissingLocation(bookingCompleted.getLocation());
-                homeHolder.setMissingTime(bookingCompleted.getMissingFrom());
-                homeHolder.setMissingStatus(bookingCompleted.getLastSeen());
+            protected void onBindViewHolder(@NonNull HomeHolder homeHolder, int i, @NonNull MissingPost missingPost) {
+                homeHolder.setMissingName(missingPost.getName());
+                homeHolder.setMissingLocation(missingPost.getLocation());
+                homeHolder.setMissingTime(missingPost.getMissingFrom());
+                homeHolder.setMissingStatus(missingPost.getLastSeen());
+                homeHolder.setMissingPhoto(missingPost.getmImageUrl());
+
 
             }
 

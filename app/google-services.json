@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "804534813374-i34f8151rur5ncp1prcv3751fdicdlvd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thetripod.foretrailbasic",
+            "certificate_hash": "9518cbce524be54e23a155ee07a9f1a8e81b7f03"
+          }
+        },
+        {
           "client_id": "804534813374-blmq657bm0ia780ft634k10k2mtfc4u6.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

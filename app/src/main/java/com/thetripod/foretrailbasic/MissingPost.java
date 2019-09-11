@@ -2,17 +2,26 @@ package com.thetripod.foretrailbasic;
 
 public class MissingPost {
 
-    private String name,location,lastSeen,missingFrom,missingId;
+    private String name,location,lastSeen,missingFrom,missingId,mImageUrl;
 
     public MissingPost() {
     }
 
-    public MissingPost(String name, String location, String lastSeen, String missingFrom,String missingId) {
+    public String getmImageUrl() {
+        return mImageUrl;
+    }
+
+    public void setmImageUrl(String mImageUrl) {
+        this.mImageUrl = mImageUrl;
+    }
+
+    public MissingPost(String name, String location, String lastSeen, String missingFrom, String missingId, String mImageUrl) {
         this.name = name;
         this.location = location;
         this.lastSeen = lastSeen;
         this.missingFrom = missingFrom;
-        this.missingId=missingId;
+        this.missingId = missingId;
+        this.mImageUrl = mImageUrl;
     }
 
     @Override
